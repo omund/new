@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - TravelEdge</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Temporary styles specific to booking page */
+        .booking-container { margin-top: 100px; display: flex; gap: 20px; }
+        .filters { flex: 1; background: #fff; padding: 20px; height: fit-content; }
+        .bus-list { flex: 3; }
+        .bus-card { background: #fff; padding: 20px; margin-bottom: 20px; display: flex; justify-content: space-between; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .bus-details h4 { color: var(--primary-color); margin-bottom: 10px; }
+        .bus-timing { display: flex; gap: 30px; margin: 15px 0; color: #555; }
+        .bus-price-btn { text-align: right; }
+        .price { font-size: 1.5rem; font-weight: bold; color: var(--secondary-color); display: block; margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+    <!-- (Copy Navbar from index.html here) -->
+     <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">Travel<span>Edge</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html" class="active">Book Tickets</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container booking-container">
+        <!-- Sidebar Filters -->
+        <aside class="filters">
+            <h3>Filters</h3>
+            <hr style="margin: 10px 0;">
+            <h4>Bus Type</h4>
+            <ul>
+                <li><input type="checkbox"> AC Seater</li>
+                <li><input type="checkbox"> AC Sleeper</li>
+                <li><input type="checkbox"> Non-AC</li>
+            </ul>
+        </aside>
+
+        <!-- Search Results -->
+        <main class="bus-list">
+            <h2>Available Buses From Delhi to Mumbai</h2>
+            <p style="margin-bottom: 20px;">3 Results found</p>
+
+            <!-- Sample Bus Card 1 -->
+            <div class="bus-card">
+                <div class="bus-details">
+                    <h4>IntrCity SmartBus (AC Sleeper)</h4>
+                    <div class="bus-timing">
+                        <div><strong>22:00</strong> <br> Delhi</div>
+                        <div style="align-self: center;">Is hours -></div>
+                        <div><strong>08:00</strong> <br> Mumbai</div>
+                    </div>
+                    <p><small>Wi-Fi | Charging Point | Water Bottle</small></p>
+                </div>
+                <div class="bus-price-btn">
+                    <span class="price">$45</span>
+                    <!-- This button would lead to Seat Selection (Item 13) -->
+                    <button class="btn-search">View Seats</button>
+                    <p style="margin-top: 5px; color: green;"><small>15 seats left</small></p>
+                </div>
+            </div>
+            
+             <!-- Sample Bus Card 2 -->
+            <div class="bus-card">
+                <div class="bus-details">
+                    <h4>Zingbus (AC Seater)</h4>
+                    <div class="bus-timing">
+                        <div><strong>18:00</strong> <br> Delhi</div>
+                        <div style="align-self: center;">14 hours -></div>
+                        <div><strong>08:00</strong> <br> Mumbai</div>
+                    </div>
+                    <p><small>Live Tracking | CCTV</small></p>
+                </div>
+                <div class="bus-price-btn">
+                    <span class="price">$30</span>
+                    <button class="btn-search">View Seats</button>
+                    <p style="margin-top: 5px; color: green;"><small>30 seats left</small></p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <!-- (Copy Footer from index.html here) -->
+</body>
+</html>

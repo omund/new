@@ -1,0 +1,17 @@
+/TravelEdge_Project
+│
+├── index.html          (Homepage)
+├── booking.html        (Bus Search/Booking)
+├── login.html          (Login Page)
+├── register.html       (Registration Page)
+│
+├── /assets
+│   ├── /css
+│   │   └── style.css   (Main Stylesheet)
+│   ├── /js
+│   │   └── script.js   (Main JavaScript)
+│   └── /images
+│       └── hero-bus.jpg (You need to find a placeholder image)
+│
+└── /admin              (Future Admin Panel placeholder)
+    └── index.html
